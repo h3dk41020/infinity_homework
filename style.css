@@ -1,8 +1,23 @@
+.body {
+    max-width: 1536px;
+    max-height: 4148.5px;
+}
+
+.scroll {
+    position: fixed;
+    z-index: 3;
+    margin-left: 10%;
+    bottom: 35px;
+}
+
 .banner {
     width: 100%;
-    height: 100%;
-    background-image: url('./img/blog_bg.png');
-    background-size: cover;
+    height: 1000px;
+    background-image: url('./img/background/bg_00.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
 .container .navbar-nav {
@@ -15,8 +30,12 @@
     z-index: 1;
 }
 
-/* Athira */
-.title .header1 {
+.caption {
+    margin-top: 256.5px;
+    margin-left: 8%;
+}
+
+.caption .header__title {
     position: absolute;
     width: 181px;
     height: 43px;
@@ -33,8 +52,7 @@
     color: transparent;
 }
 
-/* Engineer + Junior Front-end Developer */
-.title .header2 {
+.caption .header__subtitle {
     position: absolute;
     width: 506px;
     height: 27px;
@@ -49,6 +67,56 @@
     color: #FFFFFF;
 }
 
-.title .logo {
-    padding-right: 10px;
+.caption .menu__logo {
+    margin-right: 10px;
+}
+
+.about_me {
+    background-color: white;
+    background-size: contain;
+    position: relative;
+    object-position: center;
+}
+
+.backdrop {
+    display: block;
+}
+
+.backdrop .display__left {
+    margin-top: -630px;
+}
+
+.backdrop .display__right {
+    position: relative;
+    z-index: 2;
+    margin-top: -543px;
+    margin-left: 890px;
+}
+
+.backdrop .display__selfie {
+    margin-top: -1385px;
+    margin-left: 90px;
+}
+
+.introduction {
+    position: relative;
+    z-index: 1;
+    background-color: #FFFFFF;
+    margin-top: -600px;
+    margin-left: 685px;
+}
+
+.introduction .header__title {
+    color: red;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+.introduction .header__artical {
+    margin-top: -35px;
+    font-size: 28px;
+}
+
+.button__download {
+    margin-top: 50px;
 }

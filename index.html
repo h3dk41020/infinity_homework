@@ -16,28 +16,34 @@
 </head>
 
 <body>
+    <div class="scroll">
+        <a href="#">
+            <img src="./img/button/scroll.png" alt="" width="75px">
+        </a>
+    </div>
+
     <div class="banner">
         <div class="container">
             <!-- nav statr -->
             <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
                 <div class="container-fluid">
                     <div class="navbar-collapse">
-                        <img src="./img/white.png" alt="" width="13%" style="margin-top: 7.5px;">
+                        <img src="./img/background/bg_01.png" alt="" width="13%" style="margin-top: 7.5px;">
                         <ul class="navbar-nav">
                             <li class="navbar-item">
-                                <a class="nav-link" href="#" style="font-weight: bold;color: #f44336;">Home</a>
+                                <a class="nav-link" href="Home" style="font-weight: bold;color: #f44336;">Home</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="About">About</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="nav-link" href="#">Skills</a>
+                                <a class="nav-link" href="Skills">Skills</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="nav-link" href="#">Works</a>
+                                <a class="nav-link" href="Works">Works</a>
                             </li>
                             <li class="navbar-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="Contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -45,30 +51,61 @@
             </nav>
             <!-- nav end -->
         </div>
-        <div class="title">
+        <div class="caption">
             <ul>
                 <li>
-                    <p class="header1">ATHIRA</p>
-                    <p class="header2">Engineer + Junior Front-end Developer</p>
-                    <a href="#"><img src="./img/banner.png" alt="" height="154px"
-                            style="margin-top: 185.5px;margin-left:8%; z-index: 1;"></a>
-
+                    <p class="header__title">ATHIRA</p>
+                    <p class="header__subtitle">Engineer + Junior Front-end Developer</p>
                 </li>
-                <div style="margin-top: 70px;margin-left: 8%;">
-                    <a class="logo" href="https://twitter.com"><img src="./img/x.png" alt="" width="28px"></a>
-                    <a class="logo" href="https://github.com/"><img src="./img/github.png" alt="" width="28px"></a>
-                    <a class="logo" href="https://tw.linkedin.com/"><img src="./img/linkedin.png" alt=""
-                            width="28px"></a>
-                    <a class="logo" href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""
-                            width="28px"></a>
+                <div>
+                    <a class="menu__logo" href="https://twitter.com">
+                        <img src="./img/icon/x.png" alt="" width="28px">
+                    </a>
+                    <a class="menu__logo" href="https://github.com/">
+                        <img src="./img/icon/github.png" alt="" width="28px">
+                    </a>
+                    <a class="menu__logo" href="https://tw.linkedin.com/">
+                        <img src="./img/icon/linkedin.png" alt="" width="28px">
+                    </a>
+                    <a class="menu__logo" href="https://www.instagram.com/">
+                        <img src="./img/icon/instagram.png" alt="" width="28px">
+                    </a>
                 </div>
-                <li>
-                    <a href="#"><img src="./img/scroll.png" alt="" height="24px"
-                            style="margin-top: 256.5px;margin-left: 8%;margin-bottom: 50px;"></a>
-                </li>
             </ul>
         </div>
     </div>
+
+    <div class="about_me">
+        <div class="backdrop">
+            <div class="display__left">
+                <img src="./img/background/bg_02.png" alt="" width="950px">
+            </div>
+            <div class="display__right">
+                <img src="./img/background/bg_03.png" alt="" width="625px">
+            </div>
+            <div class="display__selfie">
+                <img src="./img/photo/selfie.png" alt="" width="525px">
+            </div>
+        </div>
+        <div class="introduction">
+            <div class="header__title">
+                <p>About Me</p>
+            </div>
+            <br><br>
+            <div class="header__artical">
+                <p">An inquisitive Computer Science Engineering<br>student, skilled in leadership, seeking
+                    to<br>leverage solid development skills with focus on<br>collaboration, communication and passion.
+                    </p>
+            </div>
+            <div class="button__download">
+                <a href="download">
+                    <img src="./img/button/download.png" alt="" width="150px">
+                </a>
+            </div>
+            <br>
+        </div>
+    </div>
+
     <!-- 透過網站將 BS JavaScript 載入 -->
     <script src="./bootstrap/bootstrap.bundle.min.js">
     </script>
