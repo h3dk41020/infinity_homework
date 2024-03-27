@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>homework02</title>
+    <title>homework_imitate</title>
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./action.js">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +26,7 @@
             </a>
         </div>
         <!-- End scroll -->
+
         <!-- Start banner -->
         <div class="banner">
             <div class="container">
@@ -80,6 +83,7 @@
             <!-- End caption -->
         </div>
         <!-- End  banner -->
+
         <!-- Start about_me -->
         <div class="about_me">
             <div class="container">
@@ -98,7 +102,7 @@
                         </p>
                     </div>
                     <div class="button__download">
-                        <a href="download">
+                        <a href="#">
                             <img src="./img/button/download.png" alt="" width="150px">
                         </a>
                     </div>
@@ -107,6 +111,7 @@
             </div>
         </div>
         <!-- End about_me -->
+
         <!-- Start skills -->
         <div class="skills">
             <div class="container">
@@ -122,7 +127,7 @@
                         </p>
                     </div>
                     <div class="pie__4list">
-                        <div class="row row__1">
+                        <div class="row row__top">
                             <div class="col-1-4">
                                 <div class="pie-1">
                                     <div class="pie-1-m">90%</div>
@@ -150,7 +155,7 @@
                         </div>
                     </div>
                     <div class="pie__3list">
-                        <div class="row row__2">
+                        <div class="row row__bottom">
                             <div class="col-1-3">
                                 <div class="pie-5">
                                     <div class="pie-5-m">90%</div>
@@ -179,11 +184,179 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End skills -->
+        <!-- End skills -->
+
+        <!-- Start works -->
+        <!-- Slider main container -->
+        <div class="container">
+            <div class="row row__works">
+                <div class="col-1-2 ">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./img/photo/language_1.png" alt="" width="525px"></div>
+                            <div class="swiper-slide"><img src="./img/photo/language_2.png" alt="" width="525px"></div>
+                            <div class="swiper-slide"><img src="./img/photo/language_3.png" alt="" width="525px"></div>
+                            <div class="swiper-slide"><img src="./img/photo/language_4.png" alt="" width="525px"></div>
+                            <div class="swiper-slide"><img src="./img/photo/language_5.png" alt="" width="525px"></div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div id="next" class="swiper-button-next"></div>
+                    </div>
+                    <!-- And if we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="col-1-2">
+                    <div class="introduction__works">
+                        <div class="main__title">
+                            <p>Works</p>
+                        </div>
+                        <br><br>
+                        <div class="main__artical">
+                            <p style="color: red;">Simon Game</p>
+                            <p>An inquisitive Computer Science Engineering<br> student, skilled in leadership, seeking
+                                to<br>
+                                leverage solid development skills with focus on<br> collaboration, communication and
+                                passion.
+                            </p>
+                            <div class="row row__label">
+                                <div class="col col-auto">
+                                    <span class="skill__label">HTML5</span>
+                                </div>
+                                <div class="col col-auto">
+                                    <span class="skill__label">CSS3
+                                    </span>
+                                </div>
+                                <div class="col col-auto">
+                                    <span class="skill__label">JavaScript</span>
+                                </div>
+                                <div class="col col-auto">
+                                    <span class="skill__label">
+                                        ReactJS
+                                    </span>
+                                </div>
+                            </div>
+                            <div><a href="https://github.com"><img src="./img/icon/github.png" alt="" width="40px"></a>
+                            </div>
+                            <p class="now__page">0<span id="page"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End works -->
+
+        <!-- Start Get in Touch -->
+        <div class="container">
+            <div class="table">
+                <div class="row row__table">
+                    <div class="col col-5 tip__message">Drop me a line.<br>I would like to hear<br>from you.
+                    </div>
+                    <div class="col col-auto">
+                        <div style="background-color: #fbfbfb;">
+                            <p class="table__title">Get in Touch</p>
+                        </div>
+                        <div class="form" style="background-color: #fbfbfb;">
+                            <form action="receive.php" method="post">
+                                <p><input class="form__table__1" type="text" name="Name" placeholder="Name"
+                                        maxlength="80">
+                                </p>
+                                <p><input class="form__table__2" type="text" name="Email" placeholder="Email"
+                                        maxlength="80"></p>
+                                <p><textarea class="form__table__3" name="Message" placeholder="Message"></textarea></p>
+                                <p><button id="send" class="form__button__1" type="submit">Send Message</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Get in Touch -->
+
+        <!-- Start footer -->
+        <div class="footer">
+            <p>athira_tj</p>
+            <div>
+                <a class="footer__logo" href="https://twitter.com" style="text-decoration:none;">
+                    <img src="./img/icon/x.png" alt="" width="32px">
+                </a>
+                <a class="footer__logo" href="https://github.com/" style="text-decoration:none;">
+                    <img src="./img/icon/github.png" alt="" width="32px">
+                </a>
+                <a class="footer__logo" href="https://tw.linkedin.com/" style="text-decoration:none;">
+                    <img src="./img/icon/linkedin.png" alt="" width="32px">
+                </a>
+                <a class="footer__logo" href="https://www.instagram.com/" style="text-decoration:none;">
+                    <img src="./img/icon/instagram.png" alt="" width="32px">
+                </a>
+            </div>
+            <p>All Rights Reserved <img src="./img/icon/copyright.png" alt="" width="20px"> <span id="timer"></span>
+                athira_tj <img src="./img/icon/heart.png" alt="" width="20px"></p>
+        </div>
+        <!-- End footer -->
     </div>
     <!-- 透過網站將 BS JavaScript 載入 -->
     <script src="./bootstrap/bootstrap.bundle.min.js">
+    </script>
+    <!-- 透過網站將 Swiper JavaScript 載入 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var current = 0;
+
+        // 頁數更新
+        var pageNum = function () {
+            document.getElementById('page').textContent = (current + 1);
+        }
+
+        // 動態數字
+        var changeImage = function (num) {
+            if (current + num >= 0 && current + num <= 5) {
+                current += num,
+                    pageNum();
+            }
+            if (current + num >= 6) {
+                current = 0,
+                    pageNum();
+            }
+        }
+
+        pageNum();
+
+        document.getElementById('next').onclick = function () {
+            changeImage(1);
+        }
+
+        // 表單提示
+        document.getElementById('send').onclick = function () {
+            window.alert('已傳送表單資料。')
+        }
+
+        // 日期更新
+        // 初始預設時間並提取對應數值
+        var year = (new Date()).getFullYear();
+        document.getElementById('timer').textContent = year;
+
+        // swiper套件
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            slidesPerView: 'auto',
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                enabled: true,
+                // dragSize: 100,
+            },
+        });
     </script>
 </body>
 
