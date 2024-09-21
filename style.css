@@ -5,6 +5,7 @@
 }
 
 .wrapper {
+    margin-bottom: -50px;
     max-width: 100%;
     height: auto;
     /* height: 4376.6px; */
