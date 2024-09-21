@@ -5,6 +5,7 @@
 }
 
 .wrapper {
+    margin-bottom: -30px;
     max-width: 100%;
     height: auto;
     /* height: 4376.6px; */
@@ -129,7 +130,11 @@ ul {
 }
 
 .pie__3list {
-    margin-left: 86px;
+    margin-left: 131px;
+}
+
+.pie__4list {
+    margin-left: 45px;
 }
 
 .col-1-2 {

@@ -11,3 +11,6 @@ echo '<br>Message:';
 echo '<br>';
 echo $_POST['Message'];
 echo '<br>';
+//header('Location: index.html')
+//exit;
+?>
