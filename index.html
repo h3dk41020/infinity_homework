@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./action.js">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,7 +101,7 @@
                         </p>
                     </div>
                     <div class="button__download">
-                        <a href="#">
+                        <a href="./text/download_cv.txt" download>
                             <img src="./img/button/download.png" alt="" width="150px">
                         </a>
                     </div>
@@ -325,6 +324,7 @@
         // 表單提示
         document.getElementById('send').onclick = function () {
             window.alert('已傳送表單資料。')
+            //document.location.href="index.html";
         }
 
         // 日期更新
